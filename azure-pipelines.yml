@@ -99,7 +99,7 @@ stages:
           - task: AzureAppServiceSettings@1
             displayName: 'Update web app settings'
             inputs:
-              azureSubscription: 'Resource Manager - Tailspin - Space Game'
+              azureSubscription: 'TestConnection1'
               appName: $(WebAppName)
               resourceGroupName: $(ResourceGroupName)
               appSettings: |
