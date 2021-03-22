@@ -86,7 +86,7 @@ stages:
             inputs:
               azureSubscription: 'TestConnection1'
               appName: '$(WebAppName)'
-              package: '$(Pipeline.Workspace)/drop/$(buildConfiguration)/mslearn-tailspin-spacegame-web.zip'
+              package: '$(Pipeline.Workspace)/drop/$(buildConfiguration)/Tailspin.SpaceGame.Web.zip'
           - task: AzureFunctionApp@1
             displayName: 'Azure Function Deploy: leaderboard'
             inputs:
